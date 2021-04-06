@@ -7,6 +7,6 @@
   Tentei algumas vezes aprender PHP, mas falhei miseravelmente em todas as tentativas por nao ter força de vontade para ir atrás das minhas dúvidas (que eram muitas). Sempre tive problemas com interpretaçao (de texto ou nao) e por incrível que pareça descobri que tenho uma interpretacao melhor em Ingles???? nao faço idéia do porque, mas por conta disso, esse curso abriu minha mente de uma forma absurda e consegui entender todos os conceitos que eu tinha dúvidas nas primeiras vezes que tentei aprender. Por conta disso, gostaria de te agradecer muito por isso. 
   PHP é uma linguagem que sempre curti, porém sempre tive medo de aprender de cara por aparentar ser algo difícil, mas depois de assistir as aulas eu percebi que o objetivo do PHP é simplificar ,de certa forma, muitos conceitos de outras linguagens e tornar o desenvolvimento mais fácil e ágil.
   
-  **Laracasts: **
+  **Laracasts:**
   
     
