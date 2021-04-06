@@ -10,5 +10,5 @@
   
   **Laracasts:**
   
-  Eu amei esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 99% dos conceitos sem ter dúvida. No terceiro episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: **A diferença de usar "echo"** e "<?=?>" e suas utilizaçoes; **como usar concatenaçao**; **A necessidade de utlizar um close tag (?/>) quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando "php -S localhost:8888" em vez de instalar Xampp ou algo do tipo**.
+  Eu amei esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 99% dos conceitos sem ter dúvida. No terceiro episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: **A diferença de usar "echo"** e "<?=$exemplo; ?>" e suas utilizaçoes; **como usar concatenaçao**; **A necessidade de utlizar um close tag (?/>) quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando "php -S localhost:8888" em vez de instalar Xampp ou algo do tipo**.
     
