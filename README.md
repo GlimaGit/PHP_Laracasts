@@ -33,9 +33,9 @@
   
   - Instalaçao do mySQL e utilizaçao do mesmo no Terminal - Nessa aula sofri MUITO procurando um erro `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)` que estava ocorrendo no terminal. Passei longas 2 horas procurando por mim mesmo, pois aprendi que é com porrada que se aprende. Aprendi a como navegar, criar, usar, excluir, inserir e mostrar tables e database pelo terminal, utilizando os comandos: `my sql -u root`, `show data bases;`, `create database exemplo;`, `use exemplo;`, `show exemplo;`, `create table exemplo`, `create table exemplo(description text, completed boolean)`, `describe exemplo;`, `drop table exemplo;`, `insert into exemplo`. -> Aula 11
   
-  -
+  - Class -> Aprendi que Classe é uma estrutura que abstrai um conjunto de elementos contendo características parecidas. Uma Classe é utilizada da seguinte forma: `class Person{ }` -> É utilizado uma letra maiúscula no ínicio da palavra (no caso do exemplo `Person`), assim como um pronome. Além disso aprendi a usar as keywords `public` e `protected` (só a própria classe/classes geradas podem acessar o conteúdo). Alem de classes, o outro tópico principal foi Objetos - Ainda tenho algumas dúvidas, mas vou pesquisar. Ex: `$tasks = [ new Task('Go to Store')];` -> Aula 12 
   
-  -
+  - PDO Class -> Basicamente é uma classe que dirige conexoes com banco de dados. Pode ser utilizado da seguinte forma: `try{ $pdo = new PDO('mysql:host=127.0.0.1; dbname=exemplo', 'root', '')} catch{PDOException $e{ die('Nao pode conectar')} $statement = $pdo->prepare('select * from ***database***'); $statement -> execute();`. fetchAll -> `$tasks = $statement -> fetchAll(PDO::FETCH_OBJ);`-> é possível fazer desta forma também (forma correta): *criar Task class* e depois `$tasks = $statement -> fetchAll(PDO::FETCH_CLASS, 'Task');`
   
-  -
+
   
