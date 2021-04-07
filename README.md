@@ -29,13 +29,37 @@
    -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
 
 
-  Da aula 11 a aula 13 os assuntos abordados foram:
+  Da aula 11 a aula 14 os assuntos abordados foram relativos a db:
   
   - Instalaçao do mySQL e utilizaçao do mesmo no Terminal - Nessa aula sofri MUITO procurando um erro `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)` que estava ocorrendo no terminal. Passei longas 2 horas procurando por mim mesmo, pois aprendi que é com porrada que se aprende. Aprendi a como navegar, criar, usar, excluir, inserir e mostrar tables e database pelo terminal, utilizando os comandos: `my sql -u root`, `show data bases;`, `create database exemplo;`, `use exemplo;`, `show exemplo;`, `create table exemplo`, `create table exemplo(description text, completed boolean)`, `describe exemplo;`, `drop table exemplo;`, `insert into exemplo`. -> Aula 11
   
   - Class -> Aprendi que Classe é uma estrutura que abstrai um conjunto de elementos contendo características parecidas. Uma Classe é utilizada da seguinte forma: `class Person{ }` -> É utilizado uma letra maiúscula no ínicio da palavra (no caso do exemplo `Person`), assim como um pronome. Além disso aprendi a usar as keywords `public` e `protected` (só a própria classe/classes geradas podem acessar o conteúdo). Alem de classes, o outro tópico principal foi Objetos - Ainda tenho algumas dúvidas, mas vou pesquisar. Ex: `$tasks = [ new Task('Go to Store')];` -> Aula 12 
   
-  - PDO Class -> Basicamente é uma classe que dirige conexoes com banco de dados. Pode ser utilizado da seguinte forma: `try{ $pdo = new PDO('mysql:host=127.0.0.1; dbname=exemplo', 'root', '')} catch{PDOException $e{ die('Nao pode conectar')} $statement = $pdo->prepare('select * from ***database***'); $statement -> execute();`. fetchAll -> `$tasks = $statement -> fetchAll(PDO::FETCH_OBJ);`-> é possível fazer desta forma também (forma correta): *criar Task class* e depois `$tasks = $statement -> fetchAll(PDO::FETCH_CLASS, 'Task');`
+  - PDO Class -> Basicamente é uma classe que dirige conexoes com banco de dados. Pode ser utilizado da seguinte forma: `try{ $pdo = new PDO('mysql:host=127.0.0.1; dbname=exemplo', 'root', '')} catch{PDOException $e{ die('Nao pode conectar')} $statement = $pdo->prepare('select * from ***database***'); $statement -> execute();`. fetchAll -> `$tasks = $statement -> fetchAll(PDO::FETCH_OBJ);`-> é possível fazer desta forma também (forma correta): *criar Task class* e depois `$tasks = $statement -> fetchAll(PDO::FETCH_CLASS, 'Task');` -> Aula 13
   
+  - PDO Refactoring -> uso de Query Builder - cria e roda database queries. -no caso da aula usei o select para selecionar tudo de um table em particular. Aprendi principalemnte a utilizar corretamente Construtores -> a partir do QueryBuilder. Como estou estudando Java na faculdade, achei muitas semelhanças com php, principalmte com o uso de Construtores, declaraçao de funçao, classes e etc. De certa forma isso favoreceu a conseguir entender de ma maneira mais fácil. -> Aula 14
+  
+  - A aula 15 foi dedicada a aprender a esconder passwords. - Foi um conhecimento muito útil para o meu projeto *SEARCHIT*, onde eu estava tentando aplicar um sistema de login e cadastro. Ex: `return[ 'database' => [ 'name => 'exemplo', 'username => 'root', 'password' => 'new-password', 'connection' => mysql:host=127.0.0.1', 'options' => [ ] ] ];` . Exemplo com ERRORMODE: `return[ 'database' => [ 'name => 'exemplo', 'username => 'root', 'password' => 'new-password', 'connection' => mysql:host=127.0.0.1', 'options' => [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ] ] ];` - ERRMODE_EXCEPTION trás um feedback mais destalhado.  <- Aula 15
+  
+  - Fazer um Router (Rota) -> **Essa foi a aula com mais conteúdos e mais complicada para mim**. O Router básicamente é um caminho para acessar uma parte de um site  através de uma URI. Com o Router é possível acesssar partes em específico de um site (como Contato, Valores da empresa, etc.) - na aula o professsor usou o exemplo de Contact, About Us e Culture. -> Pelo que entendi os frameworks cumprem o papel do router, inclusive no final da aula o professor disse que era necessário saber o conceito, mas nao necessariamente se preocupar muito com a implementaçao, pois o frameworks fazem esse trab pra nós. <- Aula 16
+  
+  -  Essa foi a aula mais suave, como ja tenho um contato de longo prazo com html, apenas relembrei alguns conceitos, como: Acessar e compartilhar HTML em templates (adicionar links); Pintar um pouco de botao; Partials function-> Diminui em funçoes mais específicas. -> Aula 17
+  
+  - Na aula 18 aprendi sobre Array Filtering, que como o próprio nome sugere, filtra arrays - ou seja, se vc escolher um Array em específico para ser filtrado, ou filtrar mais de um Array, é válido a autilizaçao de Array Filtering. Também aprendi sobre Array map (remapeia/transforma e cria um novo array) e Array column (retorna valores de uma coluna determinada). Na aula 19 a aula foi relativa a formulário (açoes de um formulário comum), types e request/get (sao variaveis *super globais* que coletam informaçoes especificas. Ex de estutura: `var_dump($_REQUEST);` ou `var_dump($_GET);` ) -> Aula 18, 19
+  
+  - A aula 20 foi muito importante na minha questao de login e cadastro, aprendi a como inserir o nome/informaçao digitado do form no data base (table). <- ainda tenho algumas dúvidas.
+  
+  - Composer -> Em vez de usar 1 milhao de require's o composer faz autoloading das classes e facilita/simplifica o código. -> Aula 21
+  
+  -DI Container -> Gerencia e Automotiza o injecting e reading de objetos. Ex: `App::bind('config', require 'config.php'); $config = App::get('config');` -> Aula 22
+  
+  - Controller -> Geralmente um Controller é responsavel por receber uma request e retornar uma response. Essa foi uma aula dedicada exclusivamente para o ensino de Controllers, consegui entender todo o conceito. -> Aula 23
+  
+  - Namespaces -> Basicamente tem a principal funçao de organizar melhor o código, evitando conflitos com o nome de objetos, classes, funçoes e agrupando classes. Tem o objetivo de encapsular itens. Já ouvi falar por ter estudado um pouco de C++. <- Aula 24
+  
+  -Laravel -> FINALLY
+  Instalaçao, configuraçao e explicaçao -> Explicaçao e introduçao, a partir do arquivo criado no curso, da parte mais básica de Laravel. Como assisto suas lives a mais de 2 anos já tenho uma boa base do básico de Laravel, entao consegui entender todos os conceitos perfeitamente. Ansioso para o próximo passo! <- Aula 25 
+  
+## TMJ PRIMAO
 
-  
+Aprendi MUITO com esse curso, foi um impulso enorme para eu finalmente entender e perder o medo de php. Te agradeço imensamente pelo help primo, espero que tenha curtido o resumo, nao escrevo um texto desde o Enem KKKKKKKKKK coracao roxo
