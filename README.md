@@ -24,7 +24,6 @@
   
    -  Boolean -> Famoso 01 tropa de elite e TF do lol. Nesta aula aprendi algumas functions tbm, como `ucwords` (que faz com que a primeira letra de cada palavra fique maiúscula) -> Ex `<?= ucwords($example);?>`. Tambem aprendi a utilizar e implementar o **Boolean Operator** -> `true ? 'do something' : 'do something else'` <- Aula 8
    
-   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`   
+   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`. A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao. <- Aula 9  
   
-   - 
-    
+   -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
