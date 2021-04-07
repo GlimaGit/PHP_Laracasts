@@ -11,8 +11,11 @@
   **Laracasts:**
   
   Eu amei esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 99% dos conceitos sem ter dúvida. No terceiro e quarto episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: A **diferença** de usar `<?=$exemplo;?>` e `<?php echo $example; ?>`(que na verdade é só uma simplificaçao); **como usar concatenaçao**; **A necessidade de utlizar um close tag `?/>` quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando `php -S localhost:8888` no terminal em vez de instalar Xampp ou algo do tipo**. - Nesses dois episódios foi estudado o uso de variáveis, como printar algo na tela utilizando echo, o uso de contatenaçoes (ex: `$name = Gabriel; echo "Hello" . $name;`), localhost e algumas curiosidades, funçao `htmlspecialchars()` (que tenho algumas dúvidas quanto a utilizaçao, mas pelo que entendi converte tudo para String).
-    Na aula 5 o assunto foi o uso do `require` (linkar um path para o arquivo atual), algo que procurei saber como funcionava quando eu estava fazendo um sistema de login mas nao achei nada a respeito. 
-    Na aula 6 o assunto foi array, algo que eu nao sabia usar da forma correta. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes).
-    Na aula 7 o tema foi Associative Arrays, que é utilizado da seguinte forma: `$person =['age' => 19, 'hair' => 'brown'];`
+   
+   Na aula 5 o assunto foi o uso do `require` (linkar um path para o arquivo atual), algo que procurei saber como funcionava quando eu estava fazendo um sistema de login mas nao achei nada a respeito. 
+   
+   Na aula 6 o assunto foi array, algo que eu nao sabia usar da forma correta. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes).
+   
+   Na aula 7 o tema foi Associative Arrays, que é utilizado da seguinte forma: `$person =['age' => 19, 'hair' => 'brown'];`
   
     
