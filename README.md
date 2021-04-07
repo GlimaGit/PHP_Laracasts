@@ -27,3 +27,15 @@
    - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`. A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao. <- Aula 9  
   
    -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
+
+
+  Da aula 11 a aula 13 os assuntos abordados foram:
+  
+  - Instalaçao do mySQL e utilizaçao do mesmo no Terminal - Nessa aula sofri MUITO procurando um erro `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)` que estava ocorrendo no terminal. Passei longas 2 horas procurando por mim mesmo, pois aprendi que é com porrada que se aprende. Aprendi a como navegar, criar, usar, excluir, inserir e mostrar tables e database pelo terminal, utilizando os comandos: `my sql -u root`, `show data bases;`, `create database exemplo;`, `use exemplo;`, `show exemplo;`, `create table exemplo`, `create table exemplo(description text, completed boolean)`, `describe exemplo;`, `drop table exemplo;`, `insert into exemplo`. -> Aula 11
+  
+  -
+  
+  -
+  
+  -
+  
