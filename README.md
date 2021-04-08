@@ -39,18 +39,18 @@ echo "Gabriel is " . $person['age'] . " years old.";
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <title></title>
+    <meta charset="utf-8">
+    <title></title>
 </head>
 <body>
 
 <ul>
 
-  <?php foreach ($person as $feature) : ?>
+    <?php foreach ($person as $feature) : ?>
 
-  <li><?= $feature; ?></li>
+    <li><?= $feature; ?></li>
 
-  <?php endforeach;?>
+    <?php endforeach;?>
 
 </ul>
 ```
