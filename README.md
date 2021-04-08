@@ -10,15 +10,15 @@
   
   **Laracasts:**
   
-  Eu amei esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 99% dos conceitos sem ter dúvida. No terceiro e quarto episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: A **diferença** de usar `<?=$exemplo;?>` e `<?php echo $example; ?>`(que na verdade é só uma simplificaçao); **como usar concatenaçao**; **A necessidade de utlizar um close tag `?/>` quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando `php -S localhost:8888` no terminal em vez de instalar Xampp ou algo do tipo**. - Nesses dois episódios foi estudado o uso de variáveis, como printar algo na tela utilizando echo, o uso de contatenaçoes (ex: `$name = Gabriel; echo "Hello" . $name;`), localhost e algumas curiosidades, funçao `htmlspecialchars()` (que tenho algumas dúvidas quanto a utilizaçao, mas pelo que entendi converte tudo para String).
+  Eu amei esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 80% dos conceitos sem ter dúvida. No terceiro e quarto episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: A **diferença** de usar `<?=$exemplo;?>` e `<?php echo $example; ?>`(que na verdade é só uma simplificaçao); **como usar concatenaçao**; **A necessidade de utlizar um close tag `?/>` quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando `php -S localhost:8888` no terminal em vez de instalar Xampp ou algo do tipo**. - Nesses dois episódios foi estudado o uso de variáveis, como printar algo na tela utilizando echo, o uso de contatenaçoes (ex: `$name = Gabriel; echo "Hello" . $name;`), localhost e algumas curiosidades, funçao `htmlspecialchars()` (que tenho algumas dúvidas quanto a utilizaçao, mas pelo que entendi converte tudo para String).
    
    Da aula 5 a aula 10 os assuntos abordado foram:
    
-   - O uso do `require` (linkar um path para o arquivo atual), algo que procurei saber como funcionava quando eu estava fazendo um sistema de login mas nao achei nada a respeito. <-Aula 5
+   - O uso do `require` (linkar um path para o arquivo atual). Ex: `require 'index.view.php';` <-Aula 5
    
-   - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho bastantante experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri bastante para entender a apliicaçao. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). <-Aula 6
+   - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho bastantante experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri bastante para entender a aplicaçao. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). <-Aula 6
    
-   - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. É utilizado da seguinte forma: 
+   - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. Usa-se da seguinte forma: 
   
 ```
 <?php
@@ -30,7 +30,32 @@ echo "Gabriel is " . $person['age'] . " years old.";
 ``` 
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
-   - Function `var_dump()` -> Imprime todos os elementos do Array. Function `die()`-> Pelo que entendi, após a utilizaçao desta funçao, os elementos abaixo da linha do código sao ignorados. Ou seja, imprime uma mensagem e sai do Script atual. - Abreviaçao da funçao `exit()`. Function `unset` -> Imprime todos elementos do array especificado, menos uma característica escolhida. Ex: `unset(person['age']);` <- Aula 7 
+   - Function `var_dump()` -> Imprime todos os elementos do Array. Function `die()`-> Pelo que entendi, imprime uma mensagem e sai do Script atual. 
+   
+   - Function `unset` -> Destrói a variavel que foi especificada. 
+   - Ex: 
+   
+   ```
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+<ul>
+
+  <?php foreach ($person as $feature) : ?>
+
+  <li><?= $feature; ?></li>
+
+  <?php endforeach;?>
+
+</ul>
+```
+   
+   <- Aula 7 
   
    -  Boolean -> Famoso 01 tropa de elite e TF do lol. Nesta aula aprendi algumas functions tbm, como `ucwords` (que faz com que a primeira letra de cada palavra fique maiúscula) -> Ex `<?= ucwords($example);?>`. Tambem aprendi a utilizar e implementar o **Boolean Operator** -> `true ? 'do something' : 'do something else'` <- Aula 8
    
