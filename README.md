@@ -19,7 +19,7 @@
    - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho bastantante experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri bastante para entender a apliicaçao. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). <-Aula 6
    
    - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. É utilizado da seguinte forma: 
-    ```ruby
+    ```
 <?php
 
   $person =['age' => 19, 
