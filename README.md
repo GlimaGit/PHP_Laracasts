@@ -20,21 +20,14 @@
    
    - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. É utilizado da seguinte forma: 
   
-    ```
-    <?php
-    $person =['age' => 19, 
-    'hair' 
-    => 'brown'];
-    $person = 'Gabriel';
-    echo "Hello, $person";
-    ```
-
 ```
-function test() {
-  console.log("bla");
-}
-```
-
+<?php
+$person =['age' => 19, 
+'hair' 
+=> 'brown'];
+$person = 'Gabriel';
+echo "Hello, $person";
+``` 
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
    - Function `var_dump()` -> Imprime todos os elementos do Array. Function `die()`-> Pelo que entendi, após a utilizaçao desta funçao, os elementos abaixo da linha do código sao ignorados. Ou seja, imprime uma mensagem e sai do Script atual. - Abreviaçao da funçao `exit()`. Function `unset` -> Imprime todos elementos do array especificado, menos uma característica escolhida. Ex: `unset(person['age']);` <- Aula 7 
