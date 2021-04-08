@@ -22,11 +22,11 @@
   
 ```
 <?php
-$person =['age' => 19, 
-'hair' 
-=> 'brown'];
-$person = 'Gabriel';
-echo "Hello, $person";
+$person =[
+'age' => 19, 
+'hair' => 'brown'
+];
+echo "Gabriel is " . $person['age'] . " years old.";
 ``` 
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
