@@ -14,9 +14,28 @@
    
    Da aula 5 a aula 10 os assuntos abordado foram:
    
-   - O uso do `require` (linkar um path para o arquivo atual). Ex: `require 'index.view.php';` <-Aula 5
+   **Aula 5**
    
-   - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho bastantante experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri bastante para entender a aplicaçao. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). <-Aula 6
+   - O uso do `require` (linkar um path para o arquivo atual). 
+   Ex: 
+   ```
+   require 'index.view.php';
+   ```
+
+   **Aula 6**
+   
+   - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri para entender a aplicaçao. 
+   Ex:
+   ```
+<?php
+$person =[
+'age' => 19, 
+'hair' => 'brown'
+];
+```
+   Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). 
+   
+   **Aula 7**
    
    - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. Usa-se da seguinte forma: 
   
@@ -30,10 +49,12 @@ echo "Gabriel is " . $person['age'] . " years old.";
 ``` 
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
-   - Function `var_dump()` -> Imprime todos os elementos do Array. Function `die()`-> Pelo que entendi, imprime uma mensagem e sai do Script atual. 
+   - Function `var_dump()` -> Imprime todos os elementos do Array. 
+   
+   - Function `die()`-> Pelo que entendi, imprime uma mensagem e sai do Script atual. 
    
    - Function `unset` -> Destrói a variavel que foi especificada. 
-   - Ex: 
+   Ex: 
    
    index.view.php
    ```
@@ -73,12 +94,26 @@ saída:
 ```
 •brown
 ```
-   
-   <- Aula 7 
+   **Aula 8**
   
-   -  Boolean -> Famoso 01 tropa de elite e TF do lol. Nesta aula aprendi algumas functions tbm, como `ucwords` (que faz com que a primeira letra de cada palavra fique maiúscula) -> Ex `<?= ucwords($example);?>`. Tambem aprendi a utilizar e implementar o **Boolean Operator** -> `true ? 'do something' : 'do something else'` <- Aula 8
+   -  Boolean -> Famoso 01 tropa de elite. Um boolean expressa um valor de verdade, que pode ser **true** ou **false**. 
+   Ex estrutura:
+   ```
+   true ? 'do something' : 'do somehing else'
    
-   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`. A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao. <- Aula 9  
+   ```
+   Ex aplicaçao:
+   ```
+   <strong>
+     Status: 
+   </strong> 
+      <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+   ```
+   Nesta aula aprendi algumas functions tbm, como `ucwords` (que faz com que a primeira letra de cada palavra fique maiúscula), e a como pesquisar devidamente um problema.
+   
+   **Aula 9**
+   
+   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`. A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao.  
   
    -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
 
