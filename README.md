@@ -19,6 +19,7 @@
    - Array -> algo que eu nao sabia usar de uma maneira correta em php, tenho bastantante experiencia com o assunto em outras linguagens, mas nas primeiras vezes que estudei sofri bastante para entender a apliicaçao. Além disso aprendi a funcionalidade de `foreach` e `endforeach` (simplificação do `for` para trabalhar com vetores e matrizes). <-Aula 6
    
    - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. É utilizado da seguinte forma: 
+  
     ```
 <?php
 
@@ -30,6 +31,7 @@
 echo "Hello, $person";
 
 ```
+
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
    - Function `var_dump()` -> Imprime todos os elementos do Array. Function `die()`-> Pelo que entendi, após a utilizaçao desta funçao, os elementos abaixo da linha do código sao ignorados. Ou seja, imprime uma mensagem e sai do Script atual. - Abreviaçao da funçao `exit()`. Function `unset` -> Imprime todos elementos do array especificado, menos uma característica escolhida. Ex: `unset(person['age']);` <- Aula 7 
