@@ -68,6 +68,11 @@ unset ($person['age']);
 
 require 'index.view.php';
 ```
+
+saída:
+```
+•brown
+```
    
    <- Aula 7 
   
