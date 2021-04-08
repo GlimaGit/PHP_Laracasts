@@ -21,16 +21,14 @@
    - Associative Arrays -> É utilizado quando voce quer utilizar chaves nomeadas que voce atribuiu a elas. É utilizado da seguinte forma: 
   
     ```
-<?php
-
-  $person =['age' => 19, 
-  'hair' 
-  => 'brown'];
-  $person = 'Gabriel';
-
-echo "Hello, $person";
-
-```
+    <?php
+    $person =['age' => 19, 
+    'hair' 
+    => 'brown'];
+    $person = 'Gabriel';
+    echo "Hello, $person";
+    
+    ```
 
 -> `$key` utiliza a chave que voce definiu na Associative Array. <- Aula 7
 
