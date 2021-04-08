@@ -35,6 +35,7 @@ echo "Gabriel is " . $person['age'] . " years old.";
    - Function `unset` -> Destrói a variavel que foi especificada. 
    - Ex: 
    
+   index.view.php
    ```
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -53,6 +54,19 @@ echo "Gabriel is " . $person['age'] . " years old.";
     <?php endforeach;?>
 
 </ul>
+```
+
+  index.php
+ ```
+<?php
+$person =[
+  'age' => 19,
+  'hair' => 'brown'
+];
+
+unset ($person['age']);
+
+require 'index.view.php';
 ```
    
    <- Aula 7 
