@@ -134,14 +134,61 @@ echo 'incomplete';
       
   A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao.  
   
-   -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
+   **Aula 10**
+  
+   -  Function -> Além de aprender a estrutura de uma funçao 
+ ```
+ Function dumper($one, $two){
+ var_dump($one, $two);
+ } 
+ dumper ('hello', 'Gabriel');
+ ```
+ também aprendi a usar a `function dd()` (funçao que realiza die dump)
+ Ex: 
+ ```
+ function dd($data){
+   echo '<pre>'; die (var_dump($data)); 
+   echo '<pre>';
+ } 
+ dd('hello');
+ ```
 
 
   Da aula 11 a aula 14 os assuntos abordados foram relativos a db:
   
   **Aula 11**
   
-  - Instalaçao do mySQL e utilizaçao do mesmo no Terminal - Nessa aula sofri MUITO procurando um erro `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)` que estava ocorrendo no terminal. Passei longas 2 horas procurando por mim mesmo, pois aprendi que é com porrada que se aprende. Aprendi a como navegar, criar, usar, excluir, inserir e mostrar tables e database pelo terminal, utilizando os comandos: `my sql -u root`, `show data bases;`, `create database exemplo;`, `use exemplo;`, `show exemplo;`, `create table exemplo`, `create table exemplo(description text, completed boolean)`, `describe exemplo;`, `drop table exemplo;`, `insert into exemplo`.
+  - Instalaçao do mySQL e utilizaçao do mesmo no Terminal - Nessa aula sofri MUITO procurando um erro `ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)` que estava ocorrendo no terminal. Passei longas 2 horas procurando por mim mesmo, pois aprendi que é com porrada que se aprende. Aprendi a como navegar, criar, usar, excluir, inserir e mostrar tables e database pelo terminal, utilizando os comandos: 
+ ```
+ my sql -u root
+ ```
+ ```
+ show data bases;
+ ```
+ ```
+ create database exemplo;
+ ``` 
+ ```
+ use exemplo;
+ ```
+ ```
+ show exemplo;
+ ```
+ ```
+ create table exemplo
+ ```
+ ```
+ create table exemplo(description text, completed boolean)
+ ```
+ ```
+ describe exemplo;
+ ```
+ ```
+ drop table exemplo;
+ ```
+ ```
+ insert into exemplo
+ ```
 
   **Aula 12**
   
