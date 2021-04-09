@@ -90,7 +90,7 @@ saída:
 ```
    **Aula 8**
   
-   -  Boolean -> Famoso 01 tropa de elite. Um boolean expressa um valor de verdade, que pode ser **true** ou **false**. 
+   -  Boolean -> Famoso 01 da tropa de elite. Um boolean expressa um valor de verdade, que pode ser **true** ou **false**. 
    Ex estrutura:
    ```
    true ? 'do something' : 'do somehing else'
@@ -107,7 +107,30 @@ saída:
    
    **Aula 9**
    
-   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: `if($condition){ }else{ }` -> Ex: `if($task['completed'{ echo 'finished'; }else { echo 'incomplete'; }])`. Também pode ser representada da seguinte forma: `if(!$task[completed{ echo 'incomplete';}])`. A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao.  
+   - Conditional -> Nessa aula solucionei minha maior dúvida, que era como implementar uma condiçao de uma maneira correta em php. Uma condiçao utiliza a seguinte estrutura: 
+   ```
+   if($condition){
+    }else{
+   }
+   ```
+   
+  Exemplo de aplicaçao: 
+    ```
+    <?php
+    if($task['completed']){
+      echo 'finished';
+      }else {
+        echo 'incomplete'; 
+    }])
+    ```
+      Também pode ser representada da seguinte forma:
+    ```
+    if(!$task[completed]){ 
+    echo 'incomplete';
+    }])
+    ```
+      
+  A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao.  
   
    -  `Function example(){ }`-> Além de aprender a estrutura de uma funçao - `Function dumper($one, $two){ var_dump($one, $two);} dumper ('hello', 'Gabriel');` - também aprendi a usar a `function dd()` (funçao que realiza die dump) -> Ex: `function dd($data){ echo '<pre>'; die (var_dump($data)); echo '<pre>';} dd('hello');` -> Aula 10
 
