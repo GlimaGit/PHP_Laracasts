@@ -114,21 +114,23 @@ saída:
    }
    ```
    
-  Exemplo de aplicaçao: 
-    ```
-    <?php
-    if($task['completed']){
-      echo 'finished';
-      }else {
-        echo 'incomplete'; 
-    }])
-    ```
-      Também pode ser representada da seguinte forma:
-    ```
-    if(!$task[completed]){ 
-    echo 'incomplete';
-    }])
-    ```
+Exemplo de aplicaçao: 
+  
+```
+<?php
+if($task['completed']){
+echo 'finished';
+}else {
+  echo 'incomplete'; 
+}])
+```
+
+Também pode ser representada da seguinte forma:
+```
+if(!$task[completed]){ 
+echo 'incomplete';
+}])
+```
       
   A `!` representa uma negaçao, pode ser utilizada da mesma forma para uma condiçao.  
   
