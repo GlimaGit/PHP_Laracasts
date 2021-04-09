@@ -192,12 +192,60 @@ echo 'incomplete';
 
   **Aula 12**
   
-  - Class -> Aprendi que Classe é uma estrutura que abstrai um conjunto de elementos contendo características parecidas. Uma Classe é utilizada da seguinte forma: `class Person{ }` -> É utilizado uma letra maiúscula no ínicio da palavra (no caso do exemplo `Person`), assim como um pronome. Além disso aprendi a usar as keywords `public` e `protected` (só a própria classe/classes geradas podem acessar o conteúdo). Alem de classes, o outro tópico principal foi Objetos - Ainda tenho algumas dúvidas, mas vou pesquisar. Ex: `$tasks = [ new Task('Go to Store')];`
+  - Class -> Aprendi que Classe é uma estrutura que abstrai um conjunto de elementos contendo características parecidas. Uma Classe é utilizada da seguinte forma:
+ ```
+ class Person{
+ }
+ ```
+ É utilizado uma letra maiúscula no ínicio da palavra (no caso do exemplo `Person`), assim como um pronome. Além disso aprendi a usar as keywords `public`, `static` e `protected` (só a própria classe/classes geradas podem acessar o conteúdo). Alem de classes, o outro tópico principal foi Objetos - Ainda tenho algumas dúvidas, mas vou pesquisar. 
+ Ex de Obj: 
+ ```
+ $tasks = [ new Task('Go to Store')];
+ ```
 
   **Aula 13**
   
-  - PDO Class -> Basicamente é uma classe que dirige conexoes com banco de dados. Pode ser utilizado da seguinte forma: `try{ $pdo = new PDO('mysql:host=127.0.0.1; dbname=exemplo', 'root', '')} catch{PDOException $e{ die('Nao pode conectar')} $statement = $pdo->prepare('select * from ***database***'); $statement -> execute();`. fetchAll -> `$tasks = $statement -> fetchAll(PDO::FETCH_OBJ);`-> é possível fazer desta forma também (forma correta): *criar Task class* e depois `$tasks = $statement -> fetchAll(PDO::FETCH_CLASS, 'Task');`
+  - PDO Class -> Basicamente é uma classe que dirige conexoes com banco de dados. Pode ser utilizado da seguinte forma: 
   
+  functions.php
+  ```
+  ...
+  
+  function connectToDb()
+  {
+    try{ 
+      $pdo = new PDO('mysql:host=127.0.0.1; dbname=exemplo', 'root', '')
+    }catch{PDOException $e{ 
+       die('Nao pode conectar')
+     }
+   }
+   
+   function fetchAllTasks($pdo)
+   {
+    $statement = $pdo->prepare('select * from ***database***'); 
+    $statement -> execute();
+    return $statement -> fetchAll(PDO::FETCH_CLASS, 'Task');
+   }
+   ```
+ index.php
+ ```
+ <?php
+ 
+ require 'functions.php';
+ require 'Task.php';
+ 
+ $pdo = connectToDb();
+ $tasks = fetchAllTasks($pdo);
+ 
+ require 'index.view.php';
+ ```
+ 
+ saída:
+ 
+ •~~Go to the store~~ 
+ •Finish up screencast
+ •~~clean house~~ 
+ 
   **Aula 14**
   
   - PDO Refactoring -> uso de Query Builder - cria e roda database queries. -no caso da aula usei o select para selecionar tudo de um table em particular. Aprendi principalemnte a utilizar corretamente Construtores -> a partir do QueryBuilder. Como estou estudando Java na faculdade, achei muitas semelhanças com php, principalmte com o uso de Construtores, declaraçao de funçao, classes e etc. De certa forma isso favoreceu a conseguir entender de ma maneira mais fácil. 
