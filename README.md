@@ -243,16 +243,45 @@ echo 'incomplete';
  saída:
  
  •~~Go to the store~~ 
- •Finish up screencast
- •~~clean house~~ 
  
+ •Finish up screencast
+ 
+ •~~clean house~~ 
+
+
   **Aula 14**
   
   - PDO Refactoring -> uso de Query Builder - cria e roda database queries. -no caso da aula usei o select para selecionar tudo de um table em particular. Aprendi principalemnte a utilizar corretamente Construtores -> a partir do QueryBuilder. Como estou estudando Java na faculdade, achei muitas semelhanças com php, principalmte com o uso de Construtores, declaraçao de funçao, classes e etc. De certa forma isso favoreceu a conseguir entender de ma maneira mais fácil. 
   
   **Aula 15**
   
-  - A aula 15 foi dedicada a aprender a esconder passwords. - Foi um conhecimento muito útil para o meu projeto *SEARCHIT*, onde eu estava tentando aplicar um sistema de login e cadastro. Ex: `return[ 'database' => [ 'name => 'exemplo', 'username => 'root', 'password' => 'new-password', 'connection' => mysql:host=127.0.0.1', 'options' => [ ] ] ];` . Exemplo com ERRORMODE: `return[ 'database' => [ 'name => 'exemplo', 'username => 'root', 'password' => 'new-password', 'connection' => mysql:host=127.0.0.1', 'options' => [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ] ] ];` - ERRMODE_EXCEPTION trás um feedback mais destalhado.
+  - A aula 15 foi dedicada a aprender a esconder passwords. - Foi um conhecimento muito útil para o meu projeto *SEARCHIT*, onde eu estava tentando aplicar um sistema de login e cadastro. 
+Ex de aplicaçao: 
+```
+return[
+  'database' => [ 
+    'name => 'exemplo', 
+    'username => 'root', 
+    'password' => 'new-password', 
+    'connection' => mysql:host=127.0.0.1', 
+    'options' => [ ] 
+      ] 
+    ];
+``` 
+  Exemplo com ERRORMODE: 
+  ```
+  return[
+    'database' => [
+      'name => 'exemplo', 
+      'username => 'root', 
+      'password' => 'new-password', 
+      'connection' => mysql:host=127.0.0.1', 
+      'options' => [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ] 
+        ] 
+      ];
+  ``` 
+      
+ -ERRMODE_EXCEPTION trás um feedback mais destalhado.
 
   **Aula 16**
   
@@ -264,7 +293,15 @@ echo 'incomplete';
   
   **Aula 18 e 19**
   
-  - Na aula 18 aprendi sobre Array Filtering, que como o próprio nome sugere, filtra arrays - ou seja, se vc escolher um Array em específico para ser filtrado, ou filtrar mais de um Array, é válido a autilizaçao de Array Filtering. Também aprendi sobre Array map (remapeia/transforma e cria um novo array) e Array column (retorna valores de uma coluna determinada). Na aula 19 a aula foi relativa a formulário (açoes de um formulário comum), types e request/get (sao variaveis *super globais* que coletam informaçoes especificas. Ex de estutura: `var_dump($_REQUEST);` ou `var_dump($_GET);` )
+  - Na aula 18 aprendi sobre Array Filtering, que como o próprio nome sugere, filtra arrays - ou seja, se vc escolher um Array em específico para ser filtrado, ou filtrar mais de um Array, é válido a autilizaçao de Array Filtering. Também aprendi sobre Array map (remapeia/transforma e cria um novo array) e Array column (retorna valores de uma coluna determinada). Na aula 19 a aula foi relativa a formulário (açoes de um formulário comum), types e request/get (sao variaveis *super globais* que coletam informaçoes especificas. 
+Ex de estutura: 
+```
+var_dump($_REQUEST);
+``` 
+ou 
+```
+var_dump($_GET);
+```
   
   **Aula 20**
   
@@ -272,15 +309,20 @@ echo 'incomplete';
   
   **Aula 21**
   
-  - Composer -> Em vez de usar 1 milhao de require's o composer faz autoloading das classes e facilita/simplifica o código. -> Aula 21
+  - Composer -> Em vez de usar 1 milhao de require's o composer faz autoloading das classes e facilita/simplifica o código, foi uma das aulas que mais aprendi.
   
   **Aula 22**
   
-  -DI Container -> Gerencia e Automotiza o injecting e reading de objetos. Ex: `App::bind('config', require 'config.php'); $config = App::get('config');` 
+  -DI Container -> Gerencia e Automotiza o injecting e reading de objetos. 
+  Ex: 
+  ```
+  App::bind('config', require 'config.php'); 
+  $config = App::get('config');
+  ``` 
   
   **Aula 23**
   
-  - Controller -> Geralmente um Controller é responsavel por receber uma request e retornar uma response. Essa foi uma aula dedicada exclusivamente para o ensino de Controllers, consegui entender todo o conceito.
+  - Controller -> Geralmente um Controller é responsavel por receber uma request e retornar uma response. Essa foi uma aula dedicada exclusivamente para o ensino de Controllers, consegui entender todo o conceito e aplicaçao.
   
   **Aula 24**
   
