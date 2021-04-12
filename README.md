@@ -4,7 +4,7 @@
   
   **Laracasts:**
   
-  Eu curti muito esse curso do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender 80% dos conceitos sem ter dúvida. No terceiro e quarto episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: A **diferença** de usar `<?=$exemplo;?>` e `<?php echo $example; ?>`(que na verdade é só uma simplificaçao); **como usar concatenaçao**; **A necessidade de utlizar um close tag `?/>` quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando `php -S localhost:8888` no terminal em vez de instalar Xampp ou algo do tipo**. - Nesses dois episódios foi estudado o uso de variáveis, como printar algo na tela utilizando echo, o uso de contatenaçoes (ex: `$name = Gabriel; echo "Hello" . $name;`), localhost e algumas curiosidades, funçao `htmlspecialchars()` (que tenho algumas dúvidas quanto a utilizaçao, mas pelo que entendi converte tudo para String).
+  Eu curti muito o curso de PHP for Beginners do Laracasts, o professor Jeffrey ensina de uma forma muito didática, simples e visual, e com isso consegui aprender a maior parte dos conceitos sem ter dúvida. No terceiro e quarto episódio logo de cara já matei algumas dúvidas simples que eu nao havia entendido vendo alguns conteúdos no YouTube, como: A **diferença** de usar `<?=$exemplo;?>` e `<?php echo $example; ?>`(que na verdade é só uma simplificaçao); **como usar concatenaçao**; **A necessidade de utlizar um close tag `?/>` quando php é utilizado no meio de um arquivo  html**; e PRINCIPALMENTE **a facilidade de usar o comando `php -S localhost:8888` no terminal em vez de instalar Xampp ou algo do tipo**. - Nesses dois episódios foi estudado o uso de variáveis, como printar algo na tela utilizando echo, o uso de contatenaçoes (ex: `$name = Gabriel; echo "Hello" . $name;`), localhost e algumas curiosidades, funçao `htmlspecialchars()` (que tenho algumas dúvidas quanto a utilizaçao, mas pelo que entendi converte tudo para String).
    
    Da aula 5 a aula 10 os assuntos abordado foram:
    
@@ -332,7 +332,5 @@ var_dump($_GET);
   
   -Laravel
   Instalaçao, configuraçao e explicaçao -> Explicaçao e introduçao, a partir do arquivo criado no curso, da parte mais básica de Laravel. Como assisto suas lives a mais de 2 anos já tenho uma boa base do básico de Laravel, entao consegui entender todos os conceitos perfeitamente. Ansioso para o próximo passo!
-  
-## TMJ PRIMAO
 
-Aprendi MUITO com esse curso, foi um impulso enorme para eu finalmente entender e perder o medo de php. Te agradeço imensamente pelo help primo, espero que tenha curtido o resumo, nao escrevo um texto desde o Enem KKKKKKKKKK coracao roxo
+Esse foi um breve resumo do curso PHP for Beginners da plataforma **https://laracasts.com/**. Gostaria de agradecer ao @DanielHe4rt por fornecer todo apoio e o curso para meu aprendizado.  
